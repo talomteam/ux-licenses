@@ -1,0 +1,19 @@
+{
+  "name": "ux-licenses",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talomteam/ux-licenses.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/talomteam/ux-licenses/issues"
+  },
+  "homepage": "https://github.com/talomteam/ux-licenses#readme"
+}
