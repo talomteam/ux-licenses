@@ -42,9 +42,8 @@ server.connection({ port: 6881, host: 'localhost' });
 let cmd = "echo $(dmidecode -t 4 | grep ID | sed 's/.*ID://;s/ //g') $(ifconfig | grep eth0 | awk '{print $NF}' | sed 's/://g') | sha256sum | awk '{print $1}'"
 
 unique = exec(cmd,function (err,stdout,stderr){
-   server.log('info',`stdout: ${stdout}`);
-   let unique = stdout
-   server.log('info',`stderr: ${stderr}`);
+   server.log('info',`System Key: ${stdout}`);
+   let unique = stdout;
 });
 
 //route
