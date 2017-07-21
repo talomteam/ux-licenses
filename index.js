@@ -37,7 +37,7 @@ const key = new NodeRSA();
 let unique
 
 const server = new Hapi.Server();
-server.connection({ port: 3000, host: 'localhost' });
+server.connection({ port: 6881, host: 'localhost' });
 
 let cmd = "echo $(dmidecode -t 4 | grep ID | sed 's/.*ID://;s/ //g') $(ifconfig | grep eth0 | awk '{print $NF}' | sed 's/://g') | sha256sum | awk '{print $1}'"
 
